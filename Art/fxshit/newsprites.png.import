@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqubavsk5td7m"
-path="res://.godot/imported/newsprites.png-773f103fa1d8f8a58f7feee7ab8ceffd.ctex"
+path="res://.godot/imported/newsprites.png-7e74463f8b61d3526bc71d956cfd931b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/newsprites.png"
-dest_files=["res://.godot/imported/newsprites.png-773f103fa1d8f8a58f7feee7ab8ceffd.ctex"]
+source_file="res://Art/fxshit/newsprites.png"
+dest_files=["res://.godot/imported/newsprites.png-7e74463f8b61d3526bc71d956cfd931b.ctex"]
 
 [params]
 

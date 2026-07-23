@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bmt7kuy2ska8x"
+path="res://.godot/imported/loud-thunder-192165.mp3-a64ec0229a0b73716fc239c8ac0a1227.mp3str"
+
+[deps]
+
+source_file="res://Audio/other sfx/loud-thunder-192165.mp3"
+dest_files=["res://.godot/imported/loud-thunder-192165.mp3-a64ec0229a0b73716fc239c8ac0a1227.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

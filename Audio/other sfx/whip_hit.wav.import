@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://oilja35cgsfb"
-path="res://.godot/imported/hurt or laser.wav-5e581eb7618108496f3231d245d00248.sample"
+uid="uid://bxsjyi03yan6l"
+path="res://.godot/imported/whip_hit.wav-ee0393718ef9d064a8df4de6b2661ba5.sample"
 
 [deps]
 
-source_file="res://Audio/hurt or laser.wav"
-dest_files=["res://.godot/imported/hurt or laser.wav-5e581eb7618108496f3231d245d00248.sample"]
+source_file="res://Audio/other sfx/whip_hit.wav"
+dest_files=["res://.godot/imported/whip_hit.wav-ee0393718ef9d064a8df4de6b2661ba5.sample"]
 
 [params]
 
