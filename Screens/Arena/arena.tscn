@@ -1,6 +1,11 @@
 [gd_scene format=3 uid="uid://611e4n0r3cdo"]
 
 [ext_resource type="Script" uid="uid://dnmrf8rnu0k2" path="res://Screens/Arena/arena.gd" id="1_w8ma2"]
+[ext_resource type="PackedScene" uid="uid://0s6lkav1xf1" path="res://Entities/Player/player.tscn" id="2_bft7o"]
 
 [node name="Arena" type="Node" unique_id=1555156741]
 script = ExtResource("1_w8ma2")
+
+[node name="EntityContainer" type="Node2D" parent="." unique_id=740041228]
+
+[node name="Player" parent="EntityContainer" unique_id=1131253582 instance=ExtResource("2_bft7o")]

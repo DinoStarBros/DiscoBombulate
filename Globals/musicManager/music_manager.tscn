@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bcsun61b3ipxw"]
 
 [ext_resource type="Script" uid="uid://b4fcytjt1kh6b" path="res://Globals/musicManager/music_manager.gd" id="1_vsips"]
+[ext_resource type="AudioStream" uid="uid://b4w1u054jrfka" path="res://Audio/likeHuh.ogg" id="2_dm0j6"]
 
 [node name="MusicManager" type="Node" unique_id=1107231672]
 process_mode = 3
@@ -8,7 +9,10 @@ script = ExtResource("1_vsips")
 
 [node name="Title" type="AudioStreamPlayer" parent="." unique_id=38043024]
 unique_name_in_owner = true
+bus = &"Music"
 
 [node name="Combat" type="AudioStreamPlayer" parent="." unique_id=880537342]
 unique_name_in_owner = true
-volume_db = -13.0
+stream = ExtResource("2_dm0j6")
+volume_db = -5.0
+bus = &"Music"
