@@ -3,12 +3,14 @@
 [ext_resource type="Script" uid="uid://pqncwotmj6a3" path="res://Entities/Player/player.gd" id="1_mv1ah"]
 [ext_resource type="Texture2D" uid="uid://d2eo7njr0p53g" path="res://Art/Stuff/Mow cured.png" id="2_3uyv8"]
 [ext_resource type="AudioStream" uid="uid://cw0s6bkxlwn2b" path="res://Audio/splashtownSFX/Jump.wav" id="3_lu8i8"]
+[ext_resource type="Texture2D" uid="uid://cwefwfcistj05" path="res://Art/Stuff2/heart_javelin.png" id="4_tekja"]
 
 [node name="Player" type="CharacterBody2D" unique_id=1131253582]
 script = ExtResource("1_mv1ah")
 
-[node name="MowCured" type="Sprite2D" parent="." unique_id=1846777540]
-scale = Vector2(2, 2)
+[node name="sprite" type="Sprite2D" parent="." unique_id=1846777540]
+unique_name_in_owner = true
+position = Vector2(0, -16)
 texture = ExtResource("2_3uyv8")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2071939015]
@@ -18,3 +20,7 @@ unique_name_in_owner = true
 stream = ExtResource("3_lu8i8")
 volume_db = -10.0
 bus = &"SFX"
+
+[node name="HeartJavelin" type="Sprite2D" parent="." unique_id=1594747896]
+texture = ExtResource("4_tekja")
+offset = Vector2(32, 0)
