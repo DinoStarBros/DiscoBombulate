@@ -2,25 +2,58 @@
 
 [ext_resource type="Script" uid="uid://pqncwotmj6a3" path="res://Entities/Player/player.gd" id="1_mv1ah"]
 [ext_resource type="Texture2D" uid="uid://d2eo7njr0p53g" path="res://Art/Stuff/Mow cured.png" id="2_3uyv8"]
+[ext_resource type="Texture2D" uid="uid://slhurkpdhu5p" path="res://Art/Placeholder/shadow_circle.png" id="2_5c2io"]
 [ext_resource type="AudioStream" uid="uid://cw0s6bkxlwn2b" path="res://Audio/splashtownSFX/Jump.wav" id="3_lu8i8"]
 [ext_resource type="Texture2D" uid="uid://cwefwfcistj05" path="res://Art/Stuff2/heart_javelin.png" id="4_tekja"]
+[ext_resource type="Texture2D" uid="uid://cadsnfnavf4gd" path="res://Art/Stuff2/arrow_point.png" id="5_5c2io"]
 
 [node name="Player" type="CharacterBody2D" unique_id=1131253582]
 script = ExtResource("1_mv1ah")
 
-[node name="sprite" type="Sprite2D" parent="." unique_id=1846777540]
+[node name="PlayerSpriteVisuals" type="Node2D" parent="." unique_id=160784888]
+
+[node name="MoveIndicator" type="Sprite2D" parent="PlayerSpriteVisuals" unique_id=546987752]
 unique_name_in_owner = true
-position = Vector2(0, -16)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_5c2io")
+hframes = 2
+vframes = 2
+
+[node name="ArrowPoint" type="Sprite2D" parent="PlayerSpriteVisuals/MoveIndicator" unique_id=1063733131]
+unique_name_in_owner = true
+position = Vector2(86, 0)
+texture = ExtResource("5_5c2io")
+hframes = 2
+vframes = 2
+frame = 1
+
+[node name="ShadowCircle" type="Sprite2D" parent="PlayerSpriteVisuals" unique_id=914660797]
+self_modulate = Color(1, 1, 1, 0.6509804)
+show_behind_parent = true
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_5c2io")
+
+[node name="sprite" type="Sprite2D" parent="PlayerSpriteVisuals" unique_id=1846777540]
+unique_name_in_owner = true
+position = Vector2(0, -32)
+scale = Vector2(2, 2)
 texture = ExtResource("2_3uyv8")
+
+[node name="AttackIndicator" type="Sprite2D" parent="PlayerSpriteVisuals/sprite" unique_id=588604988]
+unique_name_in_owner = true
+self_modulate = Color(18.892157, 18.892157, 18.892157, 1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_tekja")
+offset = Vector2(48, 0)
+region_enabled = true
+region_rect = Rect2(32, 24, 32, 16)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2071939015]
 
-[node name="thif" type="AudioStreamPlayer" parent="." unique_id=1731961943]
+[node name="SFX" type="Node" parent="." unique_id=876502457]
+
+[node name="step" type="AudioStreamPlayer" parent="SFX" unique_id=1731961943]
 unique_name_in_owner = true
 stream = ExtResource("3_lu8i8")
 volume_db = -10.0
 bus = &"SFX"
-
-[node name="HeartJavelin" type="Sprite2D" parent="." unique_id=1594747896]
-texture = ExtResource("4_tekja")
-offset = Vector2(32, 0)
