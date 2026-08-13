@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b4fcytjt1kh6b" path="res://Globals/musicManager/music_manager.gd" id="1_vsips"]
 [ext_resource type="AudioStream" uid="uid://b4w1u054jrfka" path="res://Audio/likeHuh.ogg" id="2_dm0j6"]
+[ext_resource type="AudioStream" uid="uid://dd3tus5vv5dxl" path="res://Audio/baas.mp3" id="3_shglj"]
 
 [node name="MusicManager" type="Node" unique_id=1107231672]
 process_mode = 3
@@ -14,5 +15,11 @@ bus = &"Music"
 [node name="Combat" type="AudioStreamPlayer" parent="." unique_id=880537342]
 unique_name_in_owner = true
 stream = ExtResource("2_dm0j6")
+volume_db = -10.0
+bus = &"Music"
+
+[node name="Combat2" type="AudioStreamPlayer" parent="." unique_id=598046828]
+unique_name_in_owner = true
+stream = ExtResource("3_shglj")
 volume_db = -10.0
 bus = &"Music"

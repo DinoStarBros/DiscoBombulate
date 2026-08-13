@@ -3,10 +3,11 @@ extends Node
 @onready var audio_players : Dictionary = {
 	"title": %Title,
 	"combat": %Combat,
+	"combat2": %Combat2,
 	
 }
 
-var music_bpm : float = 130.0
+var music_bpm : float = 150.0
 var seconds_per_beat : float = 0.0
 var current_song_playing : AudioStreamPlayer
 
